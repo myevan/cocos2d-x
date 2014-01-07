@@ -34,7 +34,26 @@
 #include "lua_cocos2dx_coco_studio_manual.hpp"
 */
 
-#include <Python.h>
+extern "C" {
+    
+    #include "cocos2d_base.h"
+    
+    int cocos2d_base_executeString(const char* py_code) {
+        PyObject* __pyx_v_py_code = PyString_FromString(py_code);
+        
+        PyObject* result = __pyx_pf_12cocos2d_base_executeString(NULL, __pyx_v_py_code);
+        
+        int resultCode = 0;
+        if (result == NULL)
+            resultCode = -1;
+        
+        Py_XDECREF(result);
+        
+        Py_DECREF(__pyx_v_py_code);
+
+        return resultCode;
+    }
+}
 
 NS_CC_BEGIN
 
@@ -66,10 +85,12 @@ bool PythonEngine::init(void)
     
     Py_NoSiteFlag = 1;
     Py_Initialize();
-/*
-    _stack = PythonStack::create();
-    _stack->retain();
+    
     extendPythonObject();
+    
+    initcocos2d_base();
+    cocos2d_base_executeString("1+2?");
+/*
     executeScriptFile("DeprecatedEnum.lua");
     executeScriptFile("DeprecatedClass.lua");
     executeScriptFile("Deprecated.lua");
@@ -102,11 +123,7 @@ void PythonEngine::removeScriptHandler(int nHandler)
 
 int PythonEngine::executeString(const char *codes)
 {
-/*
-    int ret = _stack->executeString(codes);
-    _stack->clean();
-    return ret;
-*/
+    return cocos2d_base_executeString(codes);
 }
 
 int PythonEngine::executeScriptFile(const char* filename)
@@ -736,16 +753,8 @@ int PythonEngine::handlerControlEvent(void* data)
 
 void PythonEngine::extendPythonObject()
 {
-/*
-    if ( NULL == _stack || NULL == _stack->getPythonState())
-        return;
-    
-    lua_State* lua_S = _stack->getPythonState();
-    extendWebsocket(lua_S);
-    extendGLNode(lua_S);
-    
-    _stack->clean();
-*/
+    // TODO: extendWebsocket
+    // TODO: extendGLNode
 }
 
 /*

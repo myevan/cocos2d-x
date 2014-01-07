@@ -1840,6 +1840,7 @@
 		46A1743F1807D37B005B8026 /* cpSpace.h in Headers */ = {isa = PBXBuildFile; fileRef = 46A169571807AFD6005B8026 /* cpSpace.h */; };
 		46A174401807D37B005B8026 /* cpSpatialIndex.h in Headers */ = {isa = PBXBuildFile; fileRef = 46A169581807AFD6005B8026 /* cpSpatialIndex.h */; };
 		46A174411807D37B005B8026 /* cpVect.h in Headers */ = {isa = PBXBuildFile; fileRef = 46A169591807AFD6005B8026 /* cpVect.h */; };
+		4733138A187C3017008BBE7E /* cocos2d_base.h in Headers */ = {isa = PBXBuildFile; fileRef = 47331389187C3017008BBE7E /* cocos2d_base.h */; };
 		47D442BE187B0C770042180A /* CCPythonEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47D442BC187B0C770042180A /* CCPythonEngine.cpp */; };
 		47D442D7187B12870042180A /* CCPythonEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 47D442BD187B0C770042180A /* CCPythonEngine.h */; };
 		50A1FF1818290ED4001840C4 /* UIListView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50A1FF1618290ED4001840C4 /* UIListView.cpp */; };
@@ -2995,6 +2996,7 @@
 		46A170A61807CE87005B8026 /* vec2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vec2.c; sourceTree = "<group>"; };
 		46A170A71807CE87005B8026 /* vec3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vec3.c; sourceTree = "<group>"; };
 		46A170A81807CE87005B8026 /* vec4.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vec4.c; sourceTree = "<group>"; };
+		47331389187C3017008BBE7E /* cocos2d_base.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cocos2d_base.h; path = python/bindings/cocos2d_base.h; sourceTree = "<group>"; };
 		47D44298187B07AF0042180A /* libpybindings Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libpybindings Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		47D442A6187B07AF0042180A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		47D442A9187B07AF0042180A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -5287,6 +5289,7 @@
 		47D44293187B07660042180A /* bindings */ = {
 			isa = PBXGroup;
 			children = (
+				47331389187C3017008BBE7E /* cocos2d_base.h */,
 				47D442BC187B0C770042180A /* CCPythonEngine.cpp */,
 				47D442BD187B0C770042180A /* CCPythonEngine.h */,
 			);
@@ -5719,6 +5722,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47D442D7187B12870042180A /* CCPythonEngine.h in Headers */,
+				4733138A187C3017008BBE7E /* cocos2d_base.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
