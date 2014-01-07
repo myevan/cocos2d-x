@@ -13,6 +13,7 @@
 			buildPhases = (
 			);
 			dependencies = (
+				47D442C0187B0D1E0042180A /* PBXTargetDependency */,
 				1A6FB7E71785683A00CDF010 /* PBXTargetDependency */,
 				A03F31FF178147CB006731B9 /* PBXTargetDependency */,
 				A03F3201178147CB006731B9 /* PBXTargetDependency */,
@@ -1839,6 +1840,8 @@
 		46A1743F1807D37B005B8026 /* cpSpace.h in Headers */ = {isa = PBXBuildFile; fileRef = 46A169571807AFD6005B8026 /* cpSpace.h */; };
 		46A174401807D37B005B8026 /* cpSpatialIndex.h in Headers */ = {isa = PBXBuildFile; fileRef = 46A169581807AFD6005B8026 /* cpSpatialIndex.h */; };
 		46A174411807D37B005B8026 /* cpVect.h in Headers */ = {isa = PBXBuildFile; fileRef = 46A169591807AFD6005B8026 /* cpVect.h */; };
+		47D442BE187B0C770042180A /* CCPythonEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 47D442BC187B0C770042180A /* CCPythonEngine.cpp */; };
+		47D442D7187B12870042180A /* CCPythonEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 47D442BD187B0C770042180A /* CCPythonEngine.h */; };
 		50A1FF1818290ED4001840C4 /* UIListView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50A1FF1618290ED4001840C4 /* UIListView.cpp */; };
 		50A1FF1918290ED4001840C4 /* UIListView.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 50A1FF1618290ED4001840C4 /* UIListView.cpp */; };
 		50A1FF1A18290ED4001840C4 /* UIListView.h in Headers */ = {isa = PBXBuildFile; fileRef = 50A1FF1718290ED4001840C4 /* UIListView.h */; };
@@ -1928,6 +1931,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = A07A4EFD178387670073F6A7;
 			remoteInfo = "chipmunk iOS";
+		};
+		47D442BF187B0D1E0042180A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1551A336158F2AB200E66CFE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 47D44297187B07AF0042180A;
+			remoteInfo = "pybindings Mac";
 		};
 		A03F2E92178141D1006731B9 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -2985,6 +2995,17 @@
 		46A170A61807CE87005B8026 /* vec2.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vec2.c; sourceTree = "<group>"; };
 		46A170A71807CE87005B8026 /* vec3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vec3.c; sourceTree = "<group>"; };
 		46A170A81807CE87005B8026 /* vec4.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vec4.c; sourceTree = "<group>"; };
+		47D44298187B07AF0042180A /* libpybindings Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libpybindings Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47D4429C187B07AF0042180A /* pybindings Mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pybindings Mac-Prefix.pch"; sourceTree = "<group>"; };
+		47D4429D187B07AF0042180A /* pybindings_Mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pybindings_Mac.h; sourceTree = "<group>"; };
+		47D4429F187B07AF0042180A /* pybindings_Mac.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pybindings_Mac.m; sourceTree = "<group>"; };
+		47D442A6187B07AF0042180A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		47D442A9187B07AF0042180A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		47D442B0187B07AF0042180A /* pybindings MacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pybindings MacTests-Info.plist"; sourceTree = "<group>"; };
+		47D442B2187B07AF0042180A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		47D442B4187B07AF0042180A /* pybindings_MacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pybindings_MacTests.m; sourceTree = "<group>"; };
+		47D442BC187B0C770042180A /* CCPythonEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCPythonEngine.cpp; path = python/bindings/CCPythonEngine.cpp; sourceTree = "<group>"; };
+		47D442BD187B0C770042180A /* CCPythonEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCPythonEngine.h; path = python/bindings/CCPythonEngine.h; sourceTree = "<group>"; };
 		50A1FF1618290ED4001840C4 /* UIListView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIListView.cpp; sourceTree = "<group>"; };
 		50A1FF1718290ED4001840C4 /* UIListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIListView.h; sourceTree = "<group>"; };
 		59A79D4D1821E26E00F19697 /* CCEventListenerMouse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCEventListenerMouse.cpp; sourceTree = "<group>"; };
@@ -3056,6 +3077,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1599607B1811329600C7D42C /* libluajit.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D44295187B07AF0042180A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -3162,6 +3190,8 @@
 				1AD71CF7180E26E600808F54 /* editor-support */,
 				46A167981807AF4D005B8026 /* extensions */,
 				1A57033E180BD0490088DEC7 /* external */,
+				47D4429A187B07AF0042180A /* pybindings Mac */,
+				47D442AE187B07AF0042180A /* pybindings MacTests */,
 				1551A341158F2AB200E66CFE /* Frameworks */,
 				1A8C58BD180E92CC00EF57C3 /* gui */,
 				46A170851807CE87005B8026 /* math */,
@@ -3190,6 +3220,7 @@
 				A07A5030178387750073F6A7 /* libjsbindings iOS.a */,
 				1A119791178526AA00D62A44 /* libluabindings iOS.a */,
 				1A6FB53017854BC300CDF010 /* libluabindings Mac.a */,
+				47D44298187B07AF0042180A /* libpybindings Mac.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -3200,6 +3231,8 @@
 				B3D8D44B179921D50039C204 /* ios */,
 				B3D8D4471799219B0039C204 /* mac */,
 				1551A342158F2AB200E66CFE /* Foundation.framework */,
+				47D442A6187B07AF0042180A /* XCTest.framework */,
+				47D442A9187B07AF0042180A /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -4356,6 +4389,7 @@
 		1AAF5426180E409E000584C8 /* scripting */ = {
 			isa = PBXGroup;
 			children = (
+				47D44292187B075D0042180A /* python */,
 				1A2C785C181A11EC004E5527 /* auto-generated */,
 				1AAF5428180E409E000584C8 /* javascript */,
 				1A3B1F49180E887E00497A22 /* lua */,
@@ -5250,6 +5284,59 @@
 			path = GL;
 			sourceTree = "<group>";
 		};
+		47D44292187B075D0042180A /* python */ = {
+			isa = PBXGroup;
+			children = (
+				47D44293187B07660042180A /* bindings */,
+			);
+			name = python;
+			sourceTree = "<group>";
+		};
+		47D44293187B07660042180A /* bindings */ = {
+			isa = PBXGroup;
+			children = (
+				47D442BC187B0C770042180A /* CCPythonEngine.cpp */,
+				47D442BD187B0C770042180A /* CCPythonEngine.h */,
+			);
+			name = bindings;
+			sourceTree = "<group>";
+		};
+		47D4429A187B07AF0042180A /* pybindings Mac */ = {
+			isa = PBXGroup;
+			children = (
+				47D4429D187B07AF0042180A /* pybindings_Mac.h */,
+				47D4429F187B07AF0042180A /* pybindings_Mac.m */,
+				47D4429B187B07AF0042180A /* Supporting Files */,
+			);
+			path = "pybindings Mac";
+			sourceTree = "<group>";
+		};
+		47D4429B187B07AF0042180A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47D4429C187B07AF0042180A /* pybindings Mac-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		47D442AE187B07AF0042180A /* pybindings MacTests */ = {
+			isa = PBXGroup;
+			children = (
+				47D442B4187B07AF0042180A /* pybindings_MacTests.m */,
+				47D442AF187B07AF0042180A /* Supporting Files */,
+			);
+			path = "pybindings MacTests";
+			sourceTree = "<group>";
+		};
+		47D442AF187B07AF0042180A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				47D442B0187B07AF0042180A /* pybindings MacTests-Info.plist */,
+				47D442B1187B07AF0042180A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		B3D8D4471799219B0039C204 /* mac */ = {
 			isa = PBXGroup;
 			children = (
@@ -5668,6 +5755,14 @@
 				1A8C564A180E8D0D00EF57C3 /* tolua_event.h in Headers */,
 				1585AB5D1828D74F00000FB5 /* lua_cocos2dx_studio_auto.hpp in Headers */,
 				15D6E847182B81710003C5B1 /* lua_cocos2dx_coco_studio_manual.hpp in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D442D6187B12630042180A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D442D7187B12870042180A /* CCPythonEngine.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -6407,6 +6502,23 @@
 			productReference = 1A6FB53017854BC300CDF010 /* libluabindings Mac.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		47D44297187B07AF0042180A /* pybindings Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 47D442B6187B07AF0042180A /* Build configuration list for PBXNativeTarget "pybindings Mac" */;
+			buildPhases = (
+				47D44294187B07AF0042180A /* Sources */,
+				47D44295187B07AF0042180A /* Frameworks */,
+				47D442D6187B12630042180A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "pybindings Mac";
+			productName = "pybindings Mac";
+			productReference = 47D44298187B07AF0042180A /* libpybindings Mac.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		A03F2B781780BD04006731B9 /* chipmunk Mac */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = A03F2CB51780BD04006731B9 /* Build configuration list for PBXNativeTarget "chipmunk Mac" */;
@@ -6622,6 +6734,7 @@
 				A03F2B781780BD04006731B9 /* chipmunk Mac */,
 				A03F2D5D1780BDF7006731B9 /* box2d Mac */,
 				A03F2E9817814268006731B9 /* CocosDenshion Mac */,
+				47D44297187B07AF0042180A /* pybindings Mac */,
 				A03F31E81781479B006731B9 /* jsbindings Mac */,
 				1A6FB50417854BC200CDF010 /* luabindings Mac */,
 				A07A4E0B178386390073F6A7 /* build-all-libs iOS */,
@@ -6979,6 +7092,14 @@
 				1A8C5650180E8D0D00EF57C3 /* tolua_push.c in Sources */,
 				1A8C5652180E8D0D00EF57C3 /* tolua_to.c in Sources */,
 				15D6E845182B81710003C5B1 /* lua_cocos2dx_coco_studio_manual.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47D44294187B07AF0042180A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D442BE187B0C770042180A /* CCPythonEngine.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -7617,6 +7738,11 @@
 			target = A07A4EFD178387670073F6A7 /* chipmunk iOS */;
 			targetProxy = 46A173D21807D330005B8026 /* PBXContainerItemProxy */;
 		};
+		47D442C0187B0D1E0042180A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 47D44297187B07AF0042180A /* pybindings Mac */;
+			targetProxy = 47D442BF187B0D1E0042180A /* PBXContainerItemProxy */;
+		};
 		A03F2E93178141D1006731B9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 1551A33E158F2AB200E66CFE /* cocos2dx Mac */;
@@ -7678,6 +7804,17 @@
 			targetProxy = A07A504E178389710073F6A7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		47D442B1187B07AF0042180A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				47D442B2187B07AF0042180A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1551A34A158F2AB200E66CFE /* Debug */ = {
@@ -7894,6 +8031,89 @@
 				);
 				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../cocos/2d/platform/mac $(SRCROOT)/../external/glfw3/include/mac $(SRCROOT)/../external/lua/luajit/include $(SRCROOT)/../external/lua/tolua";
+			};
+			name = Release;
+		};
+		47D442B7187B07AF0042180A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				DSTROOT = /tmp/pybindings_Mac.dst;
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					COCOS2D_PYTHON,
+					CC_TARGET_OS_MAC,
+					CC_KEYBOARD_SUPPORT,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../external/spidermonkey/prebuilt/mac\"",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../external/spidermonkey/include/mac $(SRCROOT)/../cocos/2d/platform/mac $(SRCROOT)/../external/glfw3/include/mac $(SYSTEM_LIBRARY_DIR)/Frameworks/Python.framework/Versions/2.7/include/python2.7";
+			};
+			name = Debug;
+		};
+		47D442B8187B07AF0042180A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CLANG_ENABLE_MODULES = NO;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = NO;
+				CLANG_WARN_ENUM_CONVERSION = NO;
+				CLANG_WARN_INT_CONVERSION = NO;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = NO;
+				COPY_PHASE_STRIP = YES;
+				DSTROOT = /tmp/pybindings_Mac.dst;
+				ENABLE_NS_ASSERTIONS = YES;
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_PRECOMPILE_PREFIX_HEADER = NO;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					COCOS2D_PYTHON,
+					CC_TARGET_OS_MAC,
+					CC_KEYBOARD_SUPPORT,
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = NO;
+				GCC_WARN_UNUSED_FUNCTION = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../external/spidermonkey/prebuilt/mac\"",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				USER_HEADER_SEARCH_PATHS = "$(inherited) $(SRCROOT)/../external/spidermonkey/include/mac $(SRCROOT)/../cocos/2d/platform/mac $(SRCROOT)/../external/glfw3/include/mac $(SYSTEM_LIBRARY_DIR)/Frameworks/Python.framework/Versions/2.7/include/python2.7";
 			};
 			name = Release;
 		};
@@ -8321,6 +8541,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		47D442B6187B07AF0042180A /* Build configuration list for PBXNativeTarget "pybindings Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				47D442B7187B07AF0042180A /* Debug */,
+				47D442B8187B07AF0042180A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 		A03F2CB51780BD04006731B9 /* Build configuration list for PBXNativeTarget "chipmunk Mac" */ = {
 			isa = XCConfigurationList;

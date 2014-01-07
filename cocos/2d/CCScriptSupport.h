@@ -48,7 +48,8 @@ class Acceleration;
 enum ccScriptType {
     kScriptTypeNone = 0,
     kScriptTypeLua,
-    kScriptTypeJavascript
+    kScriptTypeJavascript,
+    kScriptTypePython,
 };
 
 class ScriptHandlerEntry : public Object
