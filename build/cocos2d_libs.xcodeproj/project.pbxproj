@@ -2996,14 +2996,8 @@
 		46A170A71807CE87005B8026 /* vec3.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vec3.c; sourceTree = "<group>"; };
 		46A170A81807CE87005B8026 /* vec4.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = vec4.c; sourceTree = "<group>"; };
 		47D44298187B07AF0042180A /* libpybindings Mac.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libpybindings Mac.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		47D4429C187B07AF0042180A /* pybindings Mac-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "pybindings Mac-Prefix.pch"; sourceTree = "<group>"; };
-		47D4429D187B07AF0042180A /* pybindings_Mac.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = pybindings_Mac.h; sourceTree = "<group>"; };
-		47D4429F187B07AF0042180A /* pybindings_Mac.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pybindings_Mac.m; sourceTree = "<group>"; };
 		47D442A6187B07AF0042180A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		47D442A9187B07AF0042180A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		47D442B0187B07AF0042180A /* pybindings MacTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pybindings MacTests-Info.plist"; sourceTree = "<group>"; };
-		47D442B2187B07AF0042180A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		47D442B4187B07AF0042180A /* pybindings_MacTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pybindings_MacTests.m; sourceTree = "<group>"; };
 		47D442BC187B0C770042180A /* CCPythonEngine.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CCPythonEngine.cpp; path = python/bindings/CCPythonEngine.cpp; sourceTree = "<group>"; };
 		47D442BD187B0C770042180A /* CCPythonEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CCPythonEngine.h; path = python/bindings/CCPythonEngine.h; sourceTree = "<group>"; };
 		50A1FF1618290ED4001840C4 /* UIListView.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UIListView.cpp; sourceTree = "<group>"; };
@@ -3190,8 +3184,6 @@
 				1AD71CF7180E26E600808F54 /* editor-support */,
 				46A167981807AF4D005B8026 /* extensions */,
 				1A57033E180BD0490088DEC7 /* external */,
-				47D4429A187B07AF0042180A /* pybindings Mac */,
-				47D442AE187B07AF0042180A /* pybindings MacTests */,
 				1551A341158F2AB200E66CFE /* Frameworks */,
 				1A8C58BD180E92CC00EF57C3 /* gui */,
 				46A170851807CE87005B8026 /* math */,
@@ -5299,42 +5291,6 @@
 				47D442BD187B0C770042180A /* CCPythonEngine.h */,
 			);
 			name = bindings;
-			sourceTree = "<group>";
-		};
-		47D4429A187B07AF0042180A /* pybindings Mac */ = {
-			isa = PBXGroup;
-			children = (
-				47D4429D187B07AF0042180A /* pybindings_Mac.h */,
-				47D4429F187B07AF0042180A /* pybindings_Mac.m */,
-				47D4429B187B07AF0042180A /* Supporting Files */,
-			);
-			path = "pybindings Mac";
-			sourceTree = "<group>";
-		};
-		47D4429B187B07AF0042180A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				47D4429C187B07AF0042180A /* pybindings Mac-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		47D442AE187B07AF0042180A /* pybindings MacTests */ = {
-			isa = PBXGroup;
-			children = (
-				47D442B4187B07AF0042180A /* pybindings_MacTests.m */,
-				47D442AF187B07AF0042180A /* Supporting Files */,
-			);
-			path = "pybindings MacTests";
-			sourceTree = "<group>";
-		};
-		47D442AF187B07AF0042180A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				47D442B0187B07AF0042180A /* pybindings MacTests-Info.plist */,
-				47D442B1187B07AF0042180A /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		B3D8D4471799219B0039C204 /* mac */ = {
@@ -7805,17 +7761,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		47D442B1187B07AF0042180A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				47D442B2187B07AF0042180A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		1551A34A158F2AB200E66CFE /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -8549,6 +8494,7 @@
 				47D442B8187B07AF0042180A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		A03F2CB51780BD04006731B9 /* Build configuration list for PBXNativeTarget "chipmunk Mac" */ = {
 			isa = XCConfigurationList;
